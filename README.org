@@ -1,0 +1,17 @@
+#+TITLE: Org Babel Custom Shell
+
+> Evaluate shell source blocks using command specified in header args
+
+* Usage
+
+Load `ob-custom-shell`, add `:shell <command>` to the header arguments. Evaluate shel lscript using your command.
+
+** Example
+
+#+begin_src sh :shell cat
+echo foo bar
+#+end_src
+
+#+RESULTS:
+: foo bar
+
